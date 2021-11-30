@@ -1,7 +1,8 @@
 <div style="border: 1px solid black; padding: 20px 50px; margin: 20px">
- {{#each data}}
-  <p><b>Name:{{this.name}}</b> </p>
-  <img src={{this.images.[0].url}} alt="img"/>
-  <a href="/artist-search-results/{{this.id}}">View Albums</a>
+  {{#each albums}}
+    <img src={{this.images.2.url}} alt="img" />
+    <p><b>{{this.name}}</b> </p>
+    <a href="/tracks/{{this.id}}">View tracks</a>
+    <hr />
   {{/each}}
 </div>
